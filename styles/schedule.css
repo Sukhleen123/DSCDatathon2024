@@ -1,9 +1,16 @@
+
+#background {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #464a47;
     color: white;
     margin: 0;
     padding: 0;
+    align-items: center;
   }
   
   .schedule {
@@ -23,22 +30,37 @@ body {
   }
   
   th, td {
-    border: 1px solid #006a4d;
     padding: 20px;
-  }
-  
-  th {
     background-color: #006a4d;
-  }
-  
-  td {
-    background-color: #464a47;
-  }
-  
-  th, td {
     color: white;
   }
-  
-  tr:nth-child(even) td {
-    background-color: #4a4d4a;
+
+  td {
+    padding: 15px 60px;
+  }
+
+  th {
+    margin-bottom: 30px;
+  }
+
+  /* Circles around texts */
+  .event {
+    background-color: #518476;
+    border-radius: 50px;
+    padding: 2rem;
+  }
+
+  td.event {
+    margin-bottom: 20px;
+  }
+
+  section {
+    background-color: #006a4d;
+    border-radius: 50px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 85%;
+    margin-left: 8%;
+    border: 1px solid white;
+    box-shadow: 0 0 40px rgba(0, 255, 98, 0.5);
   }
