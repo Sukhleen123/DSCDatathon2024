@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYU DSC Datathon 2024</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../components/navbar/navbar.js"></script>
+    <script src="../scripts.js"></script>
+</head>
+<body>
+    <div id="navbar-container"><!-- Navigation bar will be loaded here --></div>
+    <main>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <button class="question" onclick="toggleAnswer('answer1')">What's a Datathon?<span class="plus">+</span></button>
+                <div id="answer1" class="answer">idk</div>
+                
+                <button class="question" onclick="toggleAnswer('answer2')">Who can participate?<span class="plus">+</span></button>
+                <div id="answer2" class="answer">Everyone</div>
+                
+                <button class="question" onclick="toggleAnswer('answer3')">I have more questions.<span class="plus">+</span></button>
+                <div id="answer3" class="answer">Ask</div>
+                
+                <button class="question" onclick="toggleAnswer('answer4')">q4<span class="plus">+</span></button>
+                <div id="answer4" class="answer">a4</div>
+                
+                <button class="question" onclick="toggleAnswer('answer5')">q5<span class="plus">+</span></button>
+                <div id="answer5" class="answer">a5</div>
+            
+                <button class="question" onclick="toggleAnswer('answer6')">q6<span class="plus">+</span></button>
+                <div id="answer6" class="answer">a6</div>
+                <div class = "next">
+                    <h2>Have more questions?</h2>
+                    <h3>Reach out to xx</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NYU Data Science Club</p>
+    </footer>
+    <script>
+        function toggleAnswer(id) {
+          var answer = document.getElementById(id);
+          if (answer.style.display === "block") {
+            answer.style.display = "none";
+          } else {
+            answer.style.display = "block";
+          }
+        }
+      </script>
+</body>
+</html>
