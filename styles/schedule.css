@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+#title {
+  margin-bottom: 80px;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: white;
@@ -54,6 +58,7 @@ body {
     margin-bottom: 20px;
   }
 
+  /* Section */
   section {
     background-color: #006a4d;
     border-radius: 50px;
@@ -63,4 +68,18 @@ body {
     margin-left: 8%;
     border: 1px solid white;
     box-shadow: 0 0 40px rgba(0, 255, 98, 0.5);
+    animation: floatAnimation 3s infinite;
   }
+
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
