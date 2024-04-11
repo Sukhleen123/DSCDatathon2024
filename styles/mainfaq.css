@@ -1,0 +1,108 @@
+:root {
+    --cbre-green: #003e2e;
+    --cbre-light-green: #01ae83;
+    --nyu-violet: #57068C;
+    --nyu-black: #000000;
+    --nyu-white: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--nyu-black);
+}
+
+header, footer {
+    background-color: var(--cbre-green);
+    color: var(--nyu-white);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--nyu-white);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+body {
+    font-family: Helvetica, serif;
+    text-align: center;
+    background-color: var(--nyu-white);
+    color: var(--cbre-green); 
+    margin: 0; 
+    padding: 0;
+}
+.faq {
+    max-width: 600px;
+    margin: 50 auto;
+    margin-top: 20px;
+    margin-left: 40;
+    margin-right: 40;
+    background-color: var(--cbre-green); 
+    padding: 20px; 
+    border-radius: 10px; 
+    display: inline-block; 
+}
+.next {
+    max-width: 600px;
+    margin: 50 auto;
+    margin-top: 50px;
+    margin-left: 40;
+    margin-right: 40;
+    background-color: var(--cbre-light-green); 
+    color: var(--nyu-white);
+    padding: 20px; 
+    border-radius: 10px; 
+}
+.plus {
+    float: right;
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 5px;
+}
+.question {
+    font-family: Helvetica, serif;
+    background-color: var(--cbre-light-green);
+    color: var(--nyu-white);
+    padding: 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+}
+.answer {
+    display: none;
+    font-family: Helvetica, serif;
+    background-color: var(--nyu-white);
+    color: var(--nyu-violet);
+    padding: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    text-align: left;
+    font-size: 18px;
+}
+a {
+    color: var(--nyu-violet);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

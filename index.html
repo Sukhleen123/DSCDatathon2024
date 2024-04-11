@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYU DSC Datathon 2024</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="/components/navbar/navbar.js"></script>
-    <script src="scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYU DSC Datathon 2024</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="homepage.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="/components/navbar/navbar.js"></script>
+  <script src="scripts.js"></script>
 </head>
 <body>
-    <div id="navbar-container"><!-- Navigation bar will be loaded here --></div>
-    <main>
-        <section>
-            <h2>Welcome to the Datathon!</h2>
-            <!-- Content here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 NYU Data Science Club</p>
-    </footer>
+  <div id="navbar-container"><!-- Navigation bar will be loaded here --></div>
+
+<script>
+var hackathonDate = new Date("Apr 19, 2024 17:30:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+  
+  var distance = hackathonDate - now;
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.getElementById("countdown").innerHTML = "Time until the Datathon begins: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "The Datathon has started! Good luck!";
+  }
+}, 1000);
+</script>
+  <div class="container">
+    <h1>DSC X CBRE Datathon 2024</h1>
+    <div id="countdown" style="font-size: 36px;"></div>
+    <h2>April 19, 5:30 PM to April 20, 10:30 PM EST</h2>
+    <a href="https://example.com/signup" class="button">Register</a>
+    <a href="https://example.com/checkin" class="button">Check-In</a>
+    <div class="cbre">
+        <h3>About Our Sponsor</h3>
+        <p>CBRE is a Fortune 500 company and is part of the "Big 4" in real estate and investment. They 
+            specialize in managing properties and portfolios, transforming business outcomes, and real estate investing.
+            The company works with a diverse range of clients and industries across the globe. 
+        </p>
+    </div>
+    <div class="us">
+        <h3>About Us</h3>
+        <p>Since its inception in 2020, the Data Science Club at NYU has been committed to providing opportunities to the student body. 
+            Our Datathon is one of our capstone events, bringing together hundreds of students to work with unique datasets and apply their skills to real world problems. 
+            This year, we have the honor of working with CBRE! We look forward to the challenges they bring to the table and can't wait to see what you all come up with!</p>
+    </div>
+    <div class="space">
+        <a href="https://example.com/dataset" class="dataset">CLICK HERE TO VIEW THE DATASET</a>
+    </div>
+  </div>
+  <br><br>
+  <footer>
+    <p>&copy; 2024 NYU Data Science Club. Website built by Ritti Bhogal, Anya Kondamani, and Kathy Tran.</p>
+</footer>
 </body>
 </html>
