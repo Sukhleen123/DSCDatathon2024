@@ -14,7 +14,7 @@
   <div id="navbar-container"><!-- Navigation bar will be loaded here --></div>
 
 <script>
-var hackathonDate = new Date("Apr 19, 2024 17:30:00").getTime();
+var hackathonDate = new Date("Apr 20, 2024 22:30:00").getTime();
 
 var x = setInterval(function() {
 
@@ -27,21 +27,23 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-  document.getElementById("countdown").innerHTML = "Time until the Datathon begins: " + days + "d " + hours + "h "
+  document.getElementById("countdown").innerHTML = "Time until submission: " + days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "The Datathon has started! Good luck!";
+    document.getElementById("countdown").innerHTML = "The Datathon has ended! Thanks for participating!";
   }
 }, 1000);
 </script>
   <div class="container">
     <h1>DSC X CBRE Datathon 2024</h1>
+    <div class="space">
+      <a href="https://example.com/dataset" class="dataset">CLICK HERE TO VIEW THE DATASET</a>
+    </div>
     <div id="countdown" style="font-size: 36px;"></div>
     <h2>April 19, 5:30 PM to April 20, 10:30 PM EST</h2>
-    <a href="https://example.com/signup" class="button">Register</a>
-    <a href="https://example.com/checkin" class="button">Check-In</a>
+    <div class="check"><a href="https://example.com/checkin" class="button">Check-In</a></div>
     <div class="cbre">
         <h3>About Our Sponsor</h3>
         <p>CBRE is a Fortune 500 company and is part of the "Big 4" in real estate and investment. They 
@@ -54,9 +56,6 @@ var x = setInterval(function() {
         <p>Since its inception in 2020, the Data Science Club at NYU has been committed to providing opportunities to the student body. 
             Our Datathon is one of our capstone events, bringing together hundreds of students to work with unique datasets and apply their skills to real world problems. 
             This year, we have the honor of working with CBRE! We look forward to the challenges they bring to the table and can't wait to see what you all come up with!</p>
-    </div>
-    <div class="space">
-        <a href="https://example.com/dataset" class="dataset">CLICK HERE TO VIEW THE DATASET</a>
     </div>
   </div>
   <br><br>

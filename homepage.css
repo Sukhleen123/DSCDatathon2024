@@ -56,14 +56,19 @@ body {
     border-radius: 10px; 
     display: inline-block; 
 }
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .button {
-    display: inline-block;
     padding: 10px 20px;
     background-color: var(--cbre-light-green);
     color: var(--nyu-white);
     text-decoration: none;
     border-radius: 20px;
     margin: 10px;
+    width: 80px;
 }
 .button:hover {
     background-color: var(--nyu-violet);
@@ -102,5 +107,6 @@ body {
     margin: 10px;
 }
 .space {
-    padding-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
