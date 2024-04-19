@@ -1,3 +1,18 @@
+/* This is styling that will exist across all pages*/
+
+#background {
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+main {
+    background-image: url('../assets/background.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 :root {
     --cbre-green: #003e2e;
     --cbre-light-green: #01ae83;
