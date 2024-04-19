@@ -1,6 +1,11 @@
-<link rel="stylesheet" href="style.css">
 <header>
-    <h1>NYU DSC x CBRE Datathon 2024</h1>
+    <div class="logo">
+    <a href="https://cds.nyu.edu/student-groups/"><img src="../../assets/DSC_logo.png" alt="DSC logo" style="width: 100px; display: inline-block; margin-bottom: -20px;"></a>
+    </div>
+    <div class="logo">
+    <h1 style="display: inline-block; font-size: 2em;">X</h1>
+    <a href="https://www.cbre.com/"><img src="../../assets/CBRE_logo.png" alt="CBRE logo" style="width: 100px; display: inline-block;"></a>
+    </div>
     <nav>
         <ul>
             <li><a href="../../index.html">Home</a></li>

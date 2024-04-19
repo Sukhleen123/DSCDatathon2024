@@ -4,6 +4,7 @@ main {
     background-image: url('../assets/background.svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: white;
 }
 
 :root {
@@ -16,7 +17,6 @@ main {
 
 body {
     font-family: Arial, sans-serif;
-    color: var(--nyu-black);
 }
 
 header, footer {
@@ -41,7 +41,21 @@ nav ul li a {
     text-decoration: none;
 }
 
+p a {
+    color: var(--nyu-white);
+    ::selection {
+        color: var(--nyu-violet);
+      }
+}
+
 main {
     padding: 20px;
     text-align: center;
+    section div p {
+        text-align: center;
+    }
+}
+
+.logo {
+    display: inline-block;
 }

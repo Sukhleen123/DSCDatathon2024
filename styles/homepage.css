@@ -1,5 +1,6 @@
 :root {
     --cbre-green: #003e2e;
+    --cbre-dark-green: #002119;
     --cbre-light-green: #01ae83;
     --nyu-violet: #57068C;
     --nyu-black: #000000;
@@ -32,6 +33,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+main div ol li {
+    text-align: left;
+}
+
 main {
     padding: 20px;
     text-align: center;
@@ -40,7 +45,6 @@ body {
     font-family: Helvetica, serif;
     text-align: center;
     background-color: var(--nyu-white);
-    color: var(--cbre-green); 
     margin: 0; 
     padding: 0;
 }
@@ -85,6 +89,8 @@ body {
     border-radius: 10px; 
     display: inline-block; 
 }
+
+
 .us {
     width: 700px;
     margin: 50 auto;
@@ -97,16 +103,26 @@ body {
     border-radius: 10px; 
     display: inline-block; 
 }
+
+.c1 {
+    width: 900px;
+}
+
 .dataset {
     display: inline-block;
     padding: 20px 40px;
-    background-color: var(--nyu-black);
+    background-color: var(--cbre-dark-green);
     color: var(--nyu-white);
     text-decoration: none;
     border-radius: 6px;
     margin: 10px;
 }
+main div a:hover {
+    background-color: var(--nyu-violet);
+}
+
+
 .space {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
 }

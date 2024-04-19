@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYU DSC Datathon 2024</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/homepage.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="../components/navbar/navbar.js"></script>
     <script src="../scripts.js"></script>
@@ -12,13 +13,191 @@
 <body>
     <div id="navbar-container"><!-- Navigation bar will be loaded here --></div>
     <main>
+        <h2>Challenges</h2>
+        <div class="space">
+            <a href="" class="dataset">CLICK HERE TO SUBMIT - OPENS AT 9:30AM ON SATURDAY</a>
+            </div>
         <section>
-            <h2>Challenges</h2>
-            <!-- Content here -->
+            <div class="cbre c1">
+                <h3>Challenge #1: Geospatial Analysis for Shaping Public Policy (Easy)</h3>
+                <h4>Background</h4>
+                <p>
+                    It is natural be concerned that flooding will be inundatng our cities as global sea levels continue to rise 
+                    as the Artic and Antarctic regions continue to melt. As cities take on water there are going to be people 
+                    with the means to move themselves out of harms way but there are going to be others who lack the 
+                    means to get out of harms way and may require the coordination of Local, State and Federal officials, 
+                    developers and landlords (stakeholders) to help rehome displaced people. There are excellent resources 
+                    available for data that might allow you to advise the stakeholders and steer policy to help those that 
+                    most need it. 
+                </p>
+                <p>
+                    Source 1: Census data: the US census (census.gov) has a ton of variables at the census tract and block 
+                    group level that can be used to identify areas where the income level is low or high.
+                </p>
+                <p>
+                    Source 2: FEMA – Federal Emergency Management Agency – produces maps that track a handful of 
+                    natural disasters including coastal and fluvial (river) flooding. These data include fields that score the 
+                    susceptibility to natural disaster as well as a value for each census tract. 
+                </p>
+                <p>
+                    Source 3: <a href="https://dataforgood.facebook.com/dfg/tools">Data for Good:</a> be creative with population 
+                    density data, predicted electrical grids and other sets that could make your analysis interesting.
+                </p>
+                <p>
+                    Source 4: <a href="https://www.earthdata.nasa.gov/topics/human-dimensions/population">NASA:</a> Global population data lots of options.
+                </p>
+                <p>
+                    Source 5: Elevation data (option). Elevation data will determine the likelihood of flood prone areas 
+                    within tracts or block groups.  
+                </p>
+                <h4>Description</h4>
+                <p>
+                    Help shape policy for public and private policy and drive investment to lower risk areas. Requirements 
+                    include: 
+                </p>
+                <ol>
+                    <li> Import data from sources formats and use Python, ARCGis or QGis to do geospatial analysis.</li>
+                    <li>Harmonize the data to similar geographic regions. Its easy to get both FEMA data and Census 
+                        data in the census tract geographic units, harder still, but much more useful is sharing down 
+                        FEMA data to the block group geographic unit and harmonizing with census data at that level. </li>
+                    <li>Between Census and FEMA data, build a model that looks for lower income neighborhoods with 
+                        buildings considered to be at much higher risk of flooding.</li>
+                    <li>Once you identify potentially vulnerable populations, look for neighborhoods in metro that are 
+                        at lower risk of inundation but could accommodate housing. Can you figure out a minimal cost 
+                        solution for the stakeholders. </li>
+                </ol>
+                <h4>Judging Criteria</h4>
+                <p>Business Efficacy:</p>
+                <ol>
+                    <li> How will your solution help the stakeholders?</li>
+                    <li>How much money would be saved by your solution than by building in neighboring block
+                        groups or tracts? </li>
+                    <li> How effectively can it be used to model other cities? </li>
+                </ol>
+                <p>Accuracy:</p>
+                <ol>
+                    <li> Difficulty of harmonizing geography. </li>
+                    <li> Did you find the lower cost solution to the problem. </li>
+                    <li> Thoughtfulness of solution. Are the at risk populations really helped by this solution? are 
+                        they still in harm’s way. </li>
+                </ol>
+                <p>Scalability:</p>
+                <ol>
+                    <li>Can the model adapt to different heights of sea level rise? </li>
+                    <li>Does the model work across multiple markets? </li>
+                    <li>How well can you explain any disparities between the effectiveness of the model between 
+                        markets? </li>
+                </ol>
+                <p>Storytelling:</p>
+                <ol>
+                    <li> How well are you able to explain the effectiveness of your model? </li>
+                    <li>Can you explain how your model works clearly and concisely? </li>
+                    <li> In what ways do you believe your model is actionable?</li>
+                </ol>
+            </div>
+            <!-- <div class="space">
+                <a href="https://www.dropbox.com/scl/fo/68cpqzt4jh9twkqs4xyfc/ABjgWFhnrqWNSZO5C1jp7K0?rlkey=bgfsiq5mxs7s196f6e9r7n44p&st=hxku423u&dl=0" class="dataset">CLICK HERE TO VIEW THE EASY DATASET</a>
+                </div> -->
+            <div class="space">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs" class="dataset">CLICK HERE TO VIEW THE EASY DATASET</a>
+                </div>
+            <br><br>
+            <div class="us c1">
+                <h3>Challenge #2: Using CNNs to Create Supply Models (Hard)</h3>
+                <h4>Background</h4>
+                <p>
+                    Supply is one of the most poorly understood aspects of tracking the US industrial real estate market. 
+                    Often data are not well marked and addresses can be a little inaccurate so CBRE is challenging you to flex 
+                    your skills and come up with a way to better model the construction process. 
+                </p>
+                <p>
+                    Typically an industrial warehouse can be built in anywhere from 2 quarters (6 months) to 6 quarters (18 
+                    months) and that range can depend on size is square feet, ceiling height of the building in feet, the loan 
+                    process, available construction labor, materials costs and availability and weather conditions to name 
+                    just a few factors. Buildings under 100,000 square feet typically can be built in under 3 quarters, 
+                    buildings between 200,000 and 500,000 square feet in 4 quarters and 500,000 to 1,000,000 in 5 quarters 
+                    and greater than a million in 6 quarters. Below we have suppled some construction stages and in the 
+                    descriptions are the percentage range in the process when we think a project should have reached that 
+                    stage.                     
+                </p>
+                <p>
+                    We are going to simplify this change by having you worry only about the data at your disposal and focus 
+                    on a model that takes into consideration the current stage of construction and its size. When you 
+                    generate a supply model, you will need to account for how far along the building is in construction and 
+                    what quarter you believe the building will be in the completed stage.                     
+                </p>
+                <h4>Description</h4>
+                <p>
+                    To build a model for estimating time of construction for Industrial Warehouse in the Atlanta Georgia 
+                    market. Requirements include: 
+
+                </p>
+                <ol>
+                    <li> Import data from the table given in a CSV format. </li>
+                    <li> Acquire recent satellite imagery. </li>
+                    <li>Using a convolutional neural network, attempt to train a model to classify the current point of 
+                        construction on the points in the CSV file and the satellite imagery. </li>
+                    <li>Given the structure of an estimator, apply that to the data you have tagged with the 4/5 stages 
+                        shown below to develop a model that predicts the time it will take each building to be 
+                        completed given how far along the project already is and its size. Make sure, if possible, to 
+                        record the approximate date of the satellite imagery because adjustments might have to be 
+                        made to account for the age of the image versus, the stage attained in the image and the current 
+                        date.</li>
+                    <li>Bonus consideration: are there structures not in the data file but are on a building parcel zoned 
+                        as industrial that the model picked up off the imagery but are in the stages ground broken, 
+                        concrete pad or framing going up? </li>
+                </ol>
+                <h4>Data Dictionary</h4>
+                <ol>
+                    <li>CSV of buildings under construction</li>
+                    <li>CSV of the market history</li>
+                </ol>
+                <!-- <p><a href="https://drive.google.com/file/d/19_F8yJ2lRyFzbf5xCO91n2QMWopZ0te-/view?usp=sharing">See column definitions here</a></p>
+                <p><a href="https://drive.google.com/file/d/1kZr6MNGc8O2zLOFkS8mTOUPUXDHdPVv9/view?usp=sharing">See examples of different stages of construction of land here</a></p> -->
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">See column definitions here</a></p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">See examples of different stages of construction of land here</a></p>
+                <h4>Judging Criteria</h4>
+                <p>Business Efficacy:</p>
+                <ol>
+                    <li> How will your solution help the business by solving this need? </li>
+                    <li> How will the work help the business get a handle on real estate supply? </li>
+                    <li> How can it be used by brokerage?</li>
+                    <li> How effectively can it be used to model? </li>
+                </ol>
+                <p>Accuracy:</p>
+                <ol>
+                    <li>  Consistency with past completions levels. </li>
+                    <li> How accurately did the model classify buildings? </li>
+                    <li> Bonus: can the model pickup buildings in the satellite image that appear in one of the 
+                        stages: ground broken, concrete pad or framing going up but wasn’t part of the set 
+                        provided in the CSV file? </li>
+                </ol>
+                <p>Predictability:</p>
+                <ol>
+                    <li> Using labelled data, were you able to combine that with the provided market history to 
+                        create a model of construction out over the next 6 quarters (180 days)? </li>
+                    <li> Can the model be used on another market with similar results. (second market provided) </li>
+                    <li> How well can you explain any issues that arose due to discrepancies between performance 
+                        in these markets. </li>
+                </ol>
+                <p>Storytelling:</p>
+                <ol>
+                    <li>  What was the story you were attempting to investigate?</li>
+                    <li>Can you explain how your model works clearly and concisely? </li>
+                    <li> In what ways do you believe your model is actionable?</li>
+                </ol>
+            </div>
+            <!-- <div class="space">
+            <a href="https://www.dropbox.com/scl/fo/bi92rwexrbyp10lzvopfr/APRLIN6Ea04p2JLP3fpOjtE?rlkey=ibhhog10zo9qalpahxsfwws9q&st=y6f8ui36&dl=0" class="dataset">CLICK HERE TO VIEW THE HARD DATASET</a>
+            </div> -->
+            <div class="space">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" class="dataset">CLICK HERE TO VIEW THE HARD DATASET</a>
+                </div>
         </section>
+        <br><br>
     </main>
     <footer>
-        <p>&copy; 2024 NYU Data Science Club</p>
+        <p>&copy; 2024 NYU Data Science Club. Website built by Ritti Bhogal, Anya Kondamani, and Kathy Tran.</p>
     </footer>
 </body>
 </html>

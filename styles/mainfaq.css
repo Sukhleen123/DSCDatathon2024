@@ -8,7 +8,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: var(--nyu-black);
 }
 
 header, footer {
@@ -102,7 +101,4 @@ body {
 a {
     color: var(--nyu-violet);
     text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
 }
