@@ -1,12 +1,5 @@
 /* This is styling that will exist across all pages*/
 
-#background {
-    z-index: -1;
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-}
-
 main {
     background-image: url('../assets/background.svg');
     background-repeat: no-repeat;
