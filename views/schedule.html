@@ -5,17 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYU DSC Datathon 2024</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/schedule.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="../components/navbar/navbar.js"></script>
     <script src="../scripts.js"></script>
 </head>
 <body>
-    <div id="navbar-container"><!-- Navigation bar will be loaded here --></div>
+      <!--Background image-->
+      <div id="navbar-container"><!-- Navigation bar will be loaded here --></div>
     <main>
+      <h1 id="title">Datathon Schedule</h1>
         <section>
-            <h2>Schedule</h2>
-            <!-- Content here -->
+            <div class="schedule">
+                <table>
+                  <tr>
+                    <th>Time</th>
+                    <th>Friday, April 19</th>
+                    <th>Time</th>
+                    <th>Saturday, April 20</th>
+                  </tr>
+                  <tr>
+                    <td>5:00pm</td>
+                    <td><div class='event'>Start of Day 1 
+                      Kick Off, 
+                      Introduction to CBRE + 
+                      Judging Criteria</div></td>
+                    <td>9:00 am</td>
+                    <td><div class="event"> Start of day 2 </div></td>
+                  </tr>
+                  <tr>
+                    <td>5:30pm</td>
+                    <td><div class='event'>Release of Problem Statement + Dataset
+                      Teams start working</div></td>
+                    <td>9:15am</td>
+                    <td><div class="event">Team Spirit 3: Stretch your Body 
+                      (and Brain) - Group Photo Doing Yoga 
+                      Pose</div></td>
+                  </tr>
+                  <tr>
+                    <td>6:00pm</td>
+                    <td><div class='event'>Team Spirit 1: Come up with Team Names + Team Slogan</div></td>
+                    <td>9:30am</td>
+                    <td><div class="event">Open Submission Period</div></td>
+                  </tr>
+                  <tr>
+                    <td>7:00pm</td>
+                    <td><div class='event'>Dinner</div></td>
+                    <td>10:30am</td>
+                    <td><div class='event'>Team Spirit 4: Scavenger: Fresh air 
+                      (walking challenge: give a clue and find 
+                      and take a photo of that building on 
+                      campus)</div></td>
+                  </tr>
+                  <tr>
+                    <td>7:15pm</td>
+                    <td><div class='event'>Team Spirit 2: Food is Fuel</div></td>
+                    <td>12:00pm</td>
+                    <td><div class="event">Brunch</div></td>
+                  </tr>
+                  <tr>
+                    <td>8:00pm</td>
+                    <td><div class='event'>Teams continue working</div></td>
+                    <td>1:30pm</td>
+                    <td><div class='event'>Event: Flip Water Cup</div></td>
+                  </tr>
+                  <tr>
+                    <td>8:30pm</td>
+                    <td><div class='event'>Water Pong Tournament</div></td>
+                    <td>4:00pm</td>
+                    <td><div class='event'>Team Spirit 5: Get in Touch with Nature -- Washington Square Park 
+                      To Touch Grass</div></td>
+                  </tr>
+                  <tr>
+                    <td>10:00pm</td>
+                    <td><div class='event'>End of day 1</div></td>
+                    <td>6:30pm</td>
+                    <td><div class='event'>Dinner</div></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>7:00pm</td>
+                    <td><div class='event'>Event: Emoji Guess Word/Movie game + Skribbl.io</div></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>8:00pm</td>
+                    <td><div class='event'>Team Spirit 5: Data Science Meme</div></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>9:30pm</td>
+                    <td><div class='event'>Submission Period Closes</div></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>10:00pm</td>
+                    <td><div class='event'>End of day 2</div></td>
+                  </tr>
+                  <!--Nhap
+                  <tr>
+                    <td>5:00 pm</td>
+                    <td><div class="event">Start of Day 1/Kick Off, 
+                      Introduction to CBRE + 
+                      Judging Criteria</div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5:30 pm</td>
+                    <td><div class='event'>Release of Problem Statement 
+                      + Dataset + Send them Off to Work</div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>6:00 pm</td>
+                    <td><div class="event">Team Spirit 1: Come up with Team Names + Team Slogan</div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>6:30 pm</td>
+                    <td></td>
+                    <td>9:00 am</td>
+                    <td><div class="event">Dinner</div></td>
+                  </tr>
+                  <tr>
+                    <td>7:00 pm</td>
+                    <td><div class="event">Dinner</div></td>
+                    <td><div class='event'>Event: Emoji Guess Word/Movie game
+                      + Skribbl.io</div></td>
+                  </tr>
+                  <tr>
+                    <td>7:15 pm</td>
+                    <td><div class='event'>Team Spirit 2: Food is Fuel</div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>8:00 pm</td>
+                    <td><div class="event">Working stage begins</div></td>
+                    <td><div class="event">Team Spirit 5: Data Science Meme</div></td>
+                  </tr>
+                  <tr>
+                    <td>8:30 pm</td>
+                    <td><div class="event">Water Pong Tournament</div></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>9:30 pm</td>
+                    <td></td>
+                    <td><div class="event">Submission Period Closes</div></td>
+                  </tr>
+                  <tr>
+                    <td>10:00 pm</td>
+                    <td><div class="event">End of day 1</div></td>
+                    <td><div class="event">End of day 2</div></td>
+                  </tr>
+                  -->
+                </table>
+              </div>
         </section>
+        <br><br>
+        <br><br>
     </main>
     <footer>
         <p>&copy; 2024 NYU Data Science Club</p>
