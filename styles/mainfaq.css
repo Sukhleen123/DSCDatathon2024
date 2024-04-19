@@ -97,6 +97,9 @@ body {
     width: 90%;
     text-align: left;
     font-size: 18px;
+    a {
+        text-decoration: underline;
+    }
 }
 a {
     color: var(--nyu-violet);
