@@ -1,6 +1,6 @@
 :root {
     --cbre-green: #003e2e;
-    --cbre-dark-green: #002119;
+    --cbre-dark-green: #00251c;
     --cbre-light-green: #01ae83;
     --nyu-violet: #57068C;
     --nyu-black: #000000;
@@ -61,9 +61,11 @@ body {
     display: inline-block; 
 }
 .check {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .button {
     padding: 10px 20px;
