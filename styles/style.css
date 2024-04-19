@@ -1,3 +1,11 @@
+/* This is styling that will exist across all pages*/
+
+main {
+    background-image: url('../assets/background.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 :root {
     --cbre-green: #003e2e;
     --cbre-light-green: #01ae83;
